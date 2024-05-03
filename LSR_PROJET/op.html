@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offre_prix</title>
+    <style>
+      /*body {
+            background-color: black;
+            color: white;
+        }
+        @media screen and (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+                color: black;
+            }
+        }*/
+        fieldset {
+            border: 2px solid #ccc;
+            display: grid;
+            margin: 15px;
+        }
+        #submit {
+            width: 10%;
+            height: 30px;           
+        }
+        .button {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          margin-left: 4%;
+          margin-right: 4%;
+        }
+        #button {
+          margin: 10px;
+          height: 30px;
+          width: 19%;
+          font-size: large;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>OP Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <fieldset>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="num_op">N* O.P: <input id="num_op" name="num_op" type="text" required /></label>
+        <label for="date">Date: <input id="date" name="date" type="date" required /></label>
+        <label for="client">Client: <input id="client" name="client" type="text" required /></label>
+        <label for="contact">Contact Client: <input id="contact" name="contact" type="text" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="projet">Projet: <input id="projet" name="projet" type="text" required /></label>
+        <label for="prestations">Prestations demandes: <input id="prestations" name="prestations" type="text" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="projet">Délai de dépôt d Offre: <input id="projet" name="projet" type="text" required /></label>
+        <label for="observ">Observation: <input id="observ" name="observ" type="text"  /></label>
+    
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">N*devis: <input id="devis" type="devis" name="devis" /></label>
+        
+        <label for="type">Envoyé par:
+          <select id="type" name="type">
+            <option value="">(select one)</option>
+            <option value="1">Email</option>
+            <option value="2">Fax</option>
+            <option value="3">Déposé </option>
+          </select>
+          <label for="date">Envoyé le: <input id="date" type="date" name="date" min="13" max="120" /></label>
+        </label>
+        
+      </fieldset>
+      <div class="button">
+        <input id="button" type="submit" value="Enregistrer" />
+        <input id="button" type="submit" value="Scanner" />
+        <input id="button" type="submit" value="Voir Dossier" />
+      </div>
+      
+    </form>
+  </fieldset>
+</body>
+</html>

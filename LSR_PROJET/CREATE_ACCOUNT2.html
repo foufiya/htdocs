@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="admin_page.css"  rel="stylesheet">-->
+
+    <!--link of the font-family-->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Mono:wght@300;400;600&family=Noto+Serif+Display:ital,wght@0,700;1,400;1,600;1,800&family=Noto+Serif:ital,wght@0,700;1,700&family=Raleway&display=swap'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <title>create account</title>
+    <style>
+        /*@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Mono:wght@300;400;600&family=Noto+Serif+Display:ital,wght@0,700;1,400;1,600;1,800&family=Noto+Serif:ital,wght@0,700;1,700&family=Raleway&display=swap');*/
+
+/*side navbar menu*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,serif;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif ;
+}
+.header {
+    
+}
+.logo {
+    width: 118px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 15px;
+    flex-shrink: 0;
+    border: 33px 1209px 872px 25px;
+    display: inline-flex;
+}
+
+
+.container {
+    
+    box-shadow: 9px 5px 4px rgba(84, 76, 76, 0.5);
+    max-width: 100%;
+    background-color: #4BD461;
+    min-height: auto!important;
+    border-radius: 30px;
+    border-color: none;
+    padding: 60px 100px 60px 100px;
+    margin: 20px 60px 20px 60px;
+    color: #000;
+    font-size: BOLD;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 18px;
+    text-shadow: 9px 5px 4px rgba(67, 58, 58, 0.5);
+    /*-webkit-text-stroke: 0.2px black;*/
+    -webkit-text-fill-color: white;
+}
+.formul {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    border-radius: 30px;
+    border-color: white;
+    width: 200px;
+    height: 50px;
+    background-color: #1ADB1D;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 20px; 
+    justify-content: right;  
+}
+.button:hover{
+    color:#1ADB1D ;
+    background-color: white;
+}
+label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    flex-direction: column;
+
+}
+input,select {
+    border-radius: 10px;
+    background: #FFFEFE;
+    height: 33px;
+    border-color: none;
+    width: 429px;
+    padding: 10px;
+}
+.input-group-text {
+    padding: 0%;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+            <header><img src="lsr.jpg" alt="logo" class="logo"></header>
+            
+        </div>
+    </div>
+    <div class="container">
+         <h1 class="title">Creer un nouveau compte</h1><br>
+            <div class="formul">
+               
+                <form action="" method="POST" class="my_form">
+                    <div class="info">
+                        <div class="login">
+                            <label for="full_name">Login:</label> <br>
+                            <input type="text" id="login" name="login" required>
+                        </div>
+                        <br>
+                        <div class="input-group mb-3">  
+                            <label class="input-group-text" for="role">Role:</label> <br>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choisir...</option>
+                                <option value="1">charge administrative</option>
+                                <option value="2">administrateur</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="password">
+                            <label for="password">Password:</label> <br>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <div id="button">
+                        <button type="submit" class="button">Creer</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>
+

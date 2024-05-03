@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+Mono:wght@300;400;600&family=Noto+Serif+Display:ital,wght@0,700;1,400;1,600;1,800&family=Noto+Serif:ital,wght@0,700;1,700&family=Raleway&display=swap');
+
+/*side navbar menu*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif ;
+}
+
+#sidebar {
+    /*position: fixed;*/
+    height: 100%;
+    /*width: 260px;*/
+    /*background-color is alrealy set down here */
+}
+.logo {
+    font-size: 25px;
+    padding: 15px;
+}
+#sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;   
+}
+.menu-title {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20;
+}
+.item a,
+.submenu-item {
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+}
+.item a:hover,
+.submenu-item:hover {
+    background: rgba(rgb(185, 173, 173),green,blue,alpha);
+}
+.submenu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: inline-block;
+    display: flex;
+    border-radius: 40px;
+    background: #FFF;
+    width: 425px;
+    height: 1455px;
+}
+
+
+/* Grid styling*/
+
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+        "sidebar nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    grid-gap: 0.2rem; 
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+}
+
+nav {
+    background: bisque; 
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+main {
+    background: #fba;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#sidebar {
+    background: rgb(202, 207, 202);
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content1 {
+    background: lightpink;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2 {
+    background: rgb(211, 187, 191);
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3 {
+    background: rgb(241, 113, 132);
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    background: rgb(252, 238, 174);
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+            "nav"
+            "sidebar"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+    }
+}
+
+   

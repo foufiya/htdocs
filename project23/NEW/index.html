@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="styly.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">ADVANTURE</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Infos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+
+</body>
+    <script>
+        const menuHamburger = decument.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

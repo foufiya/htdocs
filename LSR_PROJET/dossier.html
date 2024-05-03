@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier</title>
+    <style>
+        /*body {
+            background-color: black;
+            color: white;
+        }
+        @media screen and (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+                color: black;
+            }
+        }*/
+
+        fieldset {
+            border: 2px solid #ccc;
+            display: grid;
+            margin: 15px;
+        }
+        #submit {
+            width: 10%;
+            height: 30px;           
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Dossier Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action=''>
+        <fieldset>
+            <fieldset>
+                <label for="num_op">N* O.P: <input id="num_op" name="num_op" type="text" required /></label>
+                <label for="client">Client: <input id="client" name="client" type="text" required /></label>
+                <label for="contact">Contact Client: <input id="contact" name="contact" type="text" pattern="[a-z0-5]{8,}" required /></label> 
+            </fieldset>
+        <!-- info a remplir -->
+            <fieldset>
+                <label for="num_op">N* Dossier: <input id="num_op" name="num_op" type="text" required /></label>
+                <label for="date">Date: <input id="date" name="date" type="date" required /></label>
+                <label for="delai_des_resultats">Délai de dépôt des resultats: <input id="delai_des_resultats" name="delai_des_resultats" type="text" required /></label>
+                <label for="Bon_cmd">Bon de commande: <input id="Bon_cmd" name="Bon_cmd" type="text" pattern="[a-z0-5]{8,}" required /></label>
+            </fieldset>        
+            <fieldset>
+                <label for="type">Bon de commande compatible au devis:</label>
+                    <select id="type" name="type">
+                      <option value="">(select one)</option>
+                      <option value="1">Oui</option>
+                      <option value="2">Non</option>
+                    </select>
+                    
+            </fieldset>    
+
+            <fieldset>
+                <label for="observ">Observation:</label>
+                <textarea id="observ" name="observ">ecrire ici....</textarea>        
+            </fieldset>
+        
+            <fieldset>
+                <label for="respo_dossier">Responsable de dossier: <input id="respo_dossier" type="respo_dossier" name="respo_dossier" /></label>
+            </fieldset>
+        
+            <fieldset>
+                <label for="recu_par">Dossier réceptionné par:<br> 
+                    <input id="recu_par" name="recu_par">
+                </label>
+                <label for="date">Date:<br> 
+                    <input id="date" name="date" type="date">
+                </label>
+            </fieldset>
+                <div class="button">
+                <input type="submit" id="submit" value="Enregistrer" />
+                <input type="submit" id="submit" value="Scanner" />
+                <input type="submit" id="submit" value="Voir Dossier" />
+                </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.paragraphe {
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: justify;
+    vertical-align: baseline;
+    line-height: 40px;
+    text-indent: 25px;
+    white-space: nowrap;
+    /*word-wrap: break-word;*/
+}
+.liste {
+    justify-content: center;
+    
+}

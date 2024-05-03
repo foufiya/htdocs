@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <title>facture</title>
+    <style>
+        fieldset {
+            border: 2px solid #ccc;
+            display: flex;
+            
+        }
+        table {
+            border: 2px solid;
+            margin-bottom: 4px;
+        
+        }
+        table[input]{
+            border: none;
+        }
+        table,textarea{
+            border: none;
+        }
+        table,th {
+            border: 2px solid;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>facture Form</h1>
+    <p>Please fill out tris form witr tre required information</p>
+    <form metrod="post" action=''>
+            <fieldset>
+                <label for="num_dossier">N* Dossier: <input  getelementby /></label>
+                <label for="date">Date: <input id="date" name="date" type="date" required /></label>
+                <label for="clt">CLT: <input id="clt" name="clt" type="text" required /></label>
+                <label for="ice_num">ICE N*: <input id="ice_num" name="ice_num" type="text" pattern="[a-z0-5]{8,}" required /></label> 
+            </fieldset>
+            <fieldset>
+                <label for="num_facture"> FACTURE N* <input id="num_facture" name="num_facture" type="text" required />/2023</label>
+            </fieldset>
+            <fieldset>
+                <label for="V/Ref">V/Ref: <input id="V/Ref" name="V/Ref" type="text" required /></label>
+                <label for="N/Ref">N/Ref: <input id="N/Ref" name="N/Ref" type="text" required /></label>
+                <label for="objet">Objet: <input id="objet" name="objet" type="text" required /></label>
+            </fieldset>
+            <br>
+            <fieldset style="border: none;">
+              <table>
+                <tr>
+                    <th>Prix</th>
+                    <th>Description</th>
+                    <th>Unite</th>
+                    <th>Quantite</th>
+                    <th>Prix Uniaire</th>
+                    <th>Montant</th>
+                </tr>
+                <tr>
+                    <td><input id="prix" name="prix" type="number"></td>
+                    <td><textarea rows='5' cols='30'></textarea></td>
+                    <td><input id="unite" name="unite" type="text"></td>
+                    <td><input id="quantite" name="quantite" type="number"></td>
+                    <td><input id="p_u" name="p_u" type="number"></td>
+                    <td><input id="montant" name="montant" type="number"></td>
+                </tr>
+                <tr>
+
+                </tr>
+              </table>
+            </fieldset>    
+                    
+      
+      <input type="submit" value="Enregistrer" />
+      <input type="submit" value="Scanner" />      
+    </form>
+</body>
+</html>
